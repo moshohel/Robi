@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block sidebar %}
+<aside class="left-sidebar bg-sidebar">
+    <div id="sidebar" class="sidebar sidebar-with-footer">
+        <!-- Aplication Brand -->
+        <div class="app-brand">
+            <a href="/">
+                <!-- <img src="{% static 'img/logo2.jpg' %}"> -->
+                <span class="brand-name"> Robi </span>
+            </a>
+        </div>
+        <!-- begin sidebar scrollbar -->
+        <div class="sidebar-scrollbar">
+            <!-- sidebar menu -->
+            <ul class="nav sidebar-inner" id="sidebar-menu">
+                <li class="has-sub active expand">
+                    <a class="sidenav-item-link" href="/">
+                        <i class="mdi mdi-view-dashboard-outline"></i>
+                        <span class="nav-text">Dashboard</span> <b></b>
+                    </a>
+                </li>
+
+
+
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="#">
+                        <i class="mdi mdi-chart-line"> </i>
+                        <span class="nav-text">Analytics</span>
+                    </a>
+                </li>
+
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#REPORTS"
+                        aria-expanded="false" aria-controls="REPORTS">
+                        <i class="mdi mdi-printer"></i>
+                        <span class="nav-text">REPORTS</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="REPORTS" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="#">
+                                    <span class="nav-text">Division OR Range</span>
+
+                                </a>
+                            </li>
+
+                        </div>
+                    </ul>
+                </li>
+
+
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                        data-target="#jurisdiction" aria-expanded="false" aria-controls="jurisdiction">
+                        <i class="mdi mdi-loupe"></i>
+                        <span class="nav-text">Add Jurisdiction</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="jurisdiction" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+
+
+                            <li>
+                                <a class="sidenav-item-link" href="#">
+                                    <span class="nav-text">New Division OR Range</span>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="sidenav-item-link" href="#">
+                                    <span class="nav-text">New Unit</span>
+
+                                </a>
+                            </li>
+
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                        data-target="#Create_User" aria-expanded="false" aria-controls="Create_User">
+                        <i class="mdi mdi-account-plus"></i>
+                        <span class="nav-text">Create User</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="Create_User" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+
+                            <li>
+                                <a href="#">New User</a>
+                            </li>
+
+
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="has-sub">
+                    <a class="active" href="#">
+                        <i class="mdi mdi-menu"></i>
+                        <!-- <i class="mdi mdi-library-books"></i> -->
+                        <span class="nav-text">CASE LIST</span>
+                    </a>
+                    <ul class="collapse" id="ADD_ENQUERY" data-parent="#sidebar-menu">
+
+                    </ul>
+                </li>
+
+                <li class="has-sub">
+                    <a class="active" href="#">
+                        <!-- <i class="mdi mdi-menu"></i> -->
+                        <i class="mdi mdi-format-align-justify"></i>
+
+                        <span class="nav-text">User List</span>
+                    </a>
+                    <ul class="collapse" id="ADD_ENQUERY" data-parent="#sidebar-menu">
+
+
+                    </ul>
+                </li>
+
+                <li class="has-sub">
+                    <a class="active" href="#">
+                        <i class="mdi mdi-book-open-page-variant"></i>
+                        <span class="nav-text">FLS</span>
+                    </a>
+                    <ul class="collapse" id="ADD_ENQUERY" data-parent="#sidebar-menu">
+                    </ul>
+                </li>
+
+                <li class="has-sub">
+                    <a class="active" href="#">
+                        <i class="mdi mdi-source-fork"></i>
+                        <span class="nav-text">Survilance</span>
+                    </a>
+                    <ul class="collapse" id="ADD_ENQUERY" data-parent="#sidebar-menu">
+                    </ul>
+                </li>
+
+                <li class="has-sub">
+                    <a class="active" href="#">
+                        <i class="mdi mdi-flash"></i>
+                        <span class="nav-text">RPA</span>
+                    </a>
+                    <ul class="collapse" id="ADD_ENQUERY" data-parent="#sidebar-menu">
+                    </ul>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </div>
+</aside>
+{% endblock %}

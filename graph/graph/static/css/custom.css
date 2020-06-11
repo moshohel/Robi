@@ -1,0 +1,113 @@
+/* .canvas {
+     height: 400px !important; 
+     width: 400px !important; 
+} */
+
+/* .col-xl-4 {
+    height: 600px !important; 
+    width: 600px !important; 
+} */
+.data1{
+    display: none;
+}
+
+/* .labels {
+    font-size: 10px;
+} */
+/* .col-xl-5 {
+    flex: 70% !important;
+    max-width: 50% !important;
+} */
+.bg-primary{
+    background-color: #0b7777 !important;
+}
+.app-brand{
+    background-color: #0b7777 !important;
+}
+.btn-primary{
+    background-color: #6BC8BE;
+    border-color: azure;
+}
+/* .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle{
+    background-color: #6BC8BE;
+} */
+
+.btn-primary:hover{
+    background-color: #0b7777 !important;
+    border-color: #6BC8BE;
+}
+
+/* .card{
+    background-color: #dce6e5;
+} */
+
+.card-default .card-header {
+    /* border-bottom: 1px dotted; */
+    padding-top: 2rem;
+}
+
+.card-table tbody td,
+.card-table thead th {
+    padding: 1rem 1.9rem 1rem 1rem;
+}
+.card-table thead th {
+    font-weight: 600;
+}
+
+a {
+    color: #0b7777;
+}
+
+.profile-content-right {
+    min-height: 450px !important;;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.nothing{
+  background-color: #666;
+  font-family: Open Sans;
+}
+
+#horizontalBar-chart{
+  background-color: #fff;
+  border-radius: 6px;
+/*   Check out the fancy shadow  on this one */
+  box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.6);
+}
+
+.chartjs-render-monitor{
+    -webkit-animation: alternate;
+}
+
+.table-details {
+    margin-top: 1rem;
+}
+
+.table-details tr td:first-child {
+    width: 260px;
+}
+
+/* .accordion .card-header .btn[aria-expanded="true"], 
+.accordion .card-header a[aria-expanded="true"]
+{
+    color: #0b7777 !important;
+    border-bottom: 1px solid #129e90 !important;
+} */
+
+.accordion .card-header .btn, .accordion .card-header a{
+    color: #0b7777 !important;
+}
+
+.collapsible-title {
+    background-color: #f5f6fa !important;
+    box-shadow: 0px 4px 5px rgba(229, 230, 235, 0.6);
+}
+
+.collapsible-title button {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.table-secondary td{
+    background-color: #bae0e0 !important;
+}

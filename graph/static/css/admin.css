@@ -1,0 +1,53 @@
+#header{
+    height: 60px;
+    background:rgb(17, 66, 66);
+    color: #79c8bd;
+}
+
+
+#branding h1 {
+    color: #fff;
+}
+
+.brand_img{
+    /* margin: 10px; */
+    margin-right: 15px;
+}
+
+body.login {
+    
+    background-image: url('/static/img/login1.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    
+    
+}
+
+/* #container{
+    background-color: darkcyan !important;
+} */
+
+.bg-image {
+    filter: blur(8px) !important;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #79c8bd !important;
+}
+
+body .dashboard #content {
+     width: 100% !important
+}
+
+#content-main {
+    float: left;
+    width: 100%;
+}
+
+#content {
+    padding: 20px 50px;
+}
+
+.dataTotal{
+    display: none !important;
+}

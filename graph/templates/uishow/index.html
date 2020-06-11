@@ -1,0 +1,421 @@
+{% extends 'baseOne.html' %}
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col-xl-3 col-sm-6">
+        <div class="card card-mini mb-4">
+            <div class="card-body">
+                <h2 id="report_id" class="mb-1">
+                    <option value="report_id"> 22 - 2G </option>
+                </h2>
+                <p>Total 2G Fail Reports</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-sm-6">
+        <div class="card card-mini  mb-4">
+            <div class="card-body">
+                <h2 id="recovary" class="mb-1">43 - 3G</h2>
+                <span> Total 3G Fail Reports </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-sm-6">
+        <div class="card card-mini  mb-4">
+            <div class="card-body">
+                <h2 id="recovary" class="mb-1">32 - 4G</h2>
+                <span> Total 3G Fail Reports </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-sm-6">
+        <div class="card card-mini  mb-4">
+            <div class="card-body">
+                <h2 id="recovary" class="mb-1">69</h2>
+                <span> Total PG Restricted </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xl-6 col-12">
+        <!-- 3D pie Chart -->
+        <div class="card card-default">
+            <div class="card-header justify-content-center">
+                <h2>PG RUN Overview</h2>
+            </div>
+            <div class="card-body" style="padding:0px; overflow: hidden;">
+                <!-- <div id="piechart_3d" style="height: 500px;"></div> -->
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Region</th>
+                            <th scope="col">PG ON</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CTG_S</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>OHK_M</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>MYM</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>RANG</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>KHL</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>RAJ</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>OHK_N</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>NOA</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>BAR</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>COM</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>CTG_M</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>CTG_N</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>OHK_S</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>KUS</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>SYL</td>
+                            <td>0</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6 col-12">
+
+        <!-- World Chart -->
+
+        <div class="card card-default" id="analytics-country">
+            <div class="card-header justify-content-center">
+                <h2>PG RUN MAP</h2>
+            </div>
+            <div class="card-body" style="padding:0px;">
+                <!-- <div id='chart_div' style="width: 500px; height: 500px;"> -->
+                <!-- <div id="map_div2" style="width: 400px; height: 300px"></div> -->
+                <div id="map_div3" style="height: 500px;"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <!-- Recent Order Table -->
+        <div class="card card-table-border-none" id="recent-orders">
+            <div class="card-header justify-content-between">
+                <h2>Recent Reports</h2>
+            </div>
+            <div>
+                <table class="table card-table table-responsive table-responsive-large table-striped mt-1"
+                    style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Site Code</th>
+                            <th>Zone</th>
+                            <th class="d-none d-md-table-cell">Site Type</th>
+                            <th class="d-none d-md-table-cell">PG Start Time</th>
+                            <th class="d-none d-md-table-cell">Responsible</th>
+                            <th>Cells</th>
+                            <th>Analytics</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">CGMIR10</td>
+                            <td class="d-none d-md-table-cell">CTG-M</td>
+                            <td class="d-none d-md-table-cell">Priority-1</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 13:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Hanif</td>
+                            <td class="d-none d-md-table-cell">1818088060</td>
+                            <td>
+                                <span class="badge badge-success">PG Run OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites Has Power issue
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">KHSDR01</td>
+                            <td class="d-none d-md-table-cell">KHL</td>
+                            <td class="d-none d-md-table-cell">Priority-2</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 14:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Islam</td>
+                            <td class="d-none d-md-table-cell">1616066060</td>
+                            <td>
+                                <span class="badge badge-danger">PG Run NOT OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites down found
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">CGMIR10</td>
+                            <td class="d-none d-md-table-cell">CTG-M</td>
+                            <td class="d-none d-md-table-cell">Priority-1</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 13:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Hanif</td>
+                            <td class="d-none d-md-table-cell">1818088060</td>
+                            <td>
+                                <span class="badge badge-success">PG Run OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites Has Power issue
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">KHSDR01</td>
+                            <td class="d-none d-md-table-cell">KHL</td>
+                            <td class="d-none d-md-table-cell">Priority-2</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 14:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Islam</td>
+                            <td class="d-none d-md-table-cell">1616066060</td>
+                            <td>
+                                <span class="badge badge-danger">PG Run NOT OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites down found
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">CGMIR10</td>
+                            <td class="d-none d-md-table-cell">CTG-M</td>
+                            <td class="d-none d-md-table-cell">Priority-1</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 13:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Hanif</td>
+                            <td class="d-none d-md-table-cell">1818088060</td>
+                            <td>
+                                <span class="badge badge-success">PG Run OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites Has Power issue
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">KHSDR01</td>
+                            <td class="d-none d-md-table-cell">KHL</td>
+                            <td class="d-none d-md-table-cell">Priority-2</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 14:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Islam</td>
+                            <td class="d-none d-md-table-cell">1616066060</td>
+                            <td>
+                                <span class="badge badge-danger">PG Run NOT OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites down found
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">CGMIR10</td>
+                            <td class="d-none d-md-table-cell">CTG-M</td>
+                            <td class="d-none d-md-table-cell">Priority-1</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 13:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Hanif</td>
+                            <td class="d-none d-md-table-cell">1818088060</td>
+                            <td>
+                                <span class="badge badge-success">PG Run OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites Has Power issue
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="d-none d-md-table-cell">KHSDR01</td>
+                            <td class="d-none d-md-table-cell">KHL</td>
+                            <td class="d-none d-md-table-cell">Priority-2</td>
+                            <td class="d-none d-md-table-cell">10/6/2020 14:42</td>
+                            <td class="d-none d-md-table-cell">Mr.Islam</td>
+                            <td class="d-none d-md-table-cell">1616066060</td>
+                            <td>
+                                <span class="badge badge-danger">PG Run NOT OK</span>
+                            </td>
+                            <td class="text-right">
+                                Sites down found
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <a class="float-right" id="add-task" href="#" role="button"> View all Case List
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+
+<script type="text/javascript">
+    google.charts.load('current', {
+        'packages': ['map'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+        var data = google.visualization.arrayToDataTable([
+            [{ label: 'Latitude', type: 'number' },
+            { label: 'Longitude', type: 'number' },
+            { label: 'City', type: 'string' },
+            { label: 'Marker', type: 'string' }
+            ],
+            // ['Latitude', 'Longitude', 'City', 'Marker', 'Population'],
+            // [23.700, 90.390, 'Dhaka', 'blue'],
+            // [22.330, 91.810, 'Chattagam', 'blue'],
+            [22.840, 89.560, 'Khulna', 'blue'],
+            [24.370, 88.590, 'Rajshahi', 'blue'],
+            // [24.750, 90.390, 'Maimansingh', 'blue'],
+            // [23.880, 90.400, 'Tungi', 'blue'],
+            // [23.460, 91.170, 'Komilla', 'green'],
+            // [24.900, 91.870, 'Silhat', 'green'],
+            [25.740, 89.250, 'Rangpur', 'green'],
+            // [22.700, 90.370, 'Barisal', 'green'],
+            // [23.920, 90.720, 'Narsingdi', 'green'],
+            // [23.620, 90.500, 'Narayanganj', 'green'],
+            // [24.840, 89.370, 'Bogora', 'blue'],
+            // [23.170, 89.210, 'Jessor', 'pink'],
+            // [23.970, 91.100, 'Brahman bariya', 'pink'],
+            // [25.630, 88.640, 'Dinajpur', 'pink'],
+            // [24.000, 89.240, 'Pabna', 'pink'],
+            [24.590, 88.270, 'Nawabganj', 'pink'],
+            [24.250, 89.920, 'Tangayal', 'pink'],
+            [24.920, 89.940, 'Jamalpur', 'pink']
+
+        ]);
+        // var data = new google.visualization.DataTable();
+        // data.addColumn('number', 'Latitude');
+        // data.addColumn('number', 'Longitude');
+        // data.addColumn('string', 'City');
+        // data.addColumn('string', 'Marker');
+        // data.addColumn('string', 'City');
+        // data.addColumn('number', 'Crime retion');
+
+        // data.addRows([
+
+        //   [23.700, 90.390, 'Dhaka', 'blue'],
+        //   [22.330, 91.810, 'Chattagam', 'blue'],
+        //   [22.840, 89.560,  'Khulna', 'blue'],
+        //   [24.370, 88.590,  'Rajshahi', 'blue'],
+        //   [24.750, 90.390, 'Maimansingh', 'blue'],
+        //   [23.880, 90.400, 'Tungi', 'blue'],
+        //   [23.460, 91.170, 'Komilla', 'green'],
+        //   [24.900, 91.870, 'Silhat', 'green'],
+        //   [25.740, 89.250, 'Rangpur', 'green'],
+        //   [22.700, 90.370, 'Barisal', 'green'],
+        //   [23.920, 90.720, 'Narsingdi', 'green'],
+        //   [23.620, 90.500, 'Narayanganj', 'green'],
+        //   [24.840, 89.370, 'Bogora', 'blue'],
+        //   [23.170, 89.210, 'Jessor', 'pink'],
+        //   [23.970, 91.100, 'Brahman bariya', 'pink'],
+        //   [25.630, 88.640, 'Dinajpur', 'pink'],
+        //   [24.000, 89.240, 'Pabna', 'pink'],
+        //   [24.590, 88.270, 'Nawabganj', 'pink'],
+        //   [24.250, 89.920, 'Tangayal', 'pink'],
+        //   [24.920, 89.940, 'Jamalpur', 'pink'],
+
+        // ]);
+        // data.addColumn('string', 'Address');
+        // data.addColumn('string', 'Location');
+        // data.addColumn('string', 'Marker')
+
+        // data.addRows([
+        //   ['New York City NY, United States', 'New York',   'blue' ],
+        //   ['Scranton PA, United States',      'Scranton',   'green'],
+        //   ['Washington DC, United States',    'Washington', 'pink' ],
+        //   ['Philadelphia PA, United States',  'Philly',     'green'],
+        //   ['Pittsburgh PA, United States',    'Pittsburgh', 'green'],
+        //   ['Buffalo NY, United States',       'Buffalo',    'blue' ],
+        //   ['Baltimore MD, United States',     'Baltimore',  'pink' ],
+        //   ['Albany NY, United States',        'Albany',     'blue' ],
+        //   ['Allentown PA, United States',     'Allentown',  'green']
+        // ]);
+        var url = 'https://icons.iconarchive.com/icons/icons-land/vista-map-markers/48/';
+
+        var options = {
+            zoomLevel: 6,
+            showTooltip: true,
+            showInfoWindow: true,
+            useMapTypeControl: true,
+            icons: {
+                blue: {
+                    normal: url + 'Map-Marker-Ball-Azure-icon.png',
+                    selected: url + 'Map-Marker-Ball-Right-Azure-icon.png'
+                },
+                green: {
+                    normal: url + 'Map-Marker-Push-Pin-1-Chartreuse-icon.png',
+                    selected: url + 'Map-Marker-Push-Pin-1-Right-Chartreuse-icon.png'
+                },
+                pink: {
+                    normal: url + 'Map-Marker-Ball-Pink-icon.png',
+                    selected: url + 'Map-Marker-Ball-Right-Pink-icon.png'
+                }
+            }
+        };
+        var map = new google.visualization.Map(document.getElementById('map_div3'));
+
+        map.draw(data, options);
+    }
+</script>
+{% endblock %}
